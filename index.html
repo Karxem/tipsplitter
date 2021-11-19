@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/75938ad06f.js" crossorigin="anonymous"></script>
+    <title>Splitter</title>
+</head>
+
+<body>
+    <main class="center">
+        <p>Tip Splitter by karxem</p>
+        <div class="content-box">
+            <div class="input-fields">
+                <div class="bill-amnt">
+                    <label for="bill">Bill</label>
+                    <div class="bill-input input-container">
+                        <i class="fas fa-dollar-sign"></i>
+                        <input type="text" id="bill" name="bill" placeholder="0" onkeyup="dividing(this.value, ppl);">
+                    </div>
+                </div>
+                <div class="ppl-amnt">
+                    <label for="ppl">Number of People</label>
+                    <div class="ppl-input input-container">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id="ppl" name="ppl" placeholder="0" onkeyup="divide(bill, this.value);">
+                    </div>
+                </div>
+                <div class="tip-selec">
+                    <p>Select Tip</p>
+                    <div class="tip-input input-container">
+                        <i class="fas fa-percentage"></i>
+                        <input type="text" id="cstm" name="cstm" placeholder="Custom" onkeyup="tipster(this.value);">
+                    </div>
+                    <div class="tip-container">
+                        <button class="space-btn btn" onclick="tipster(10);">10%</button>
+                        <button class="space-btn btn" onclick="tipster(20);">20%</button>
+                        <button class="space-btn btn" onclick="tipster(30);">30%</button>
+                        <button class="space-btn btn" onclick="tipster(40);">40%</button>
+                    </div>
+
+                    <div id="error" class="error">
+                        <div class="error-inner">
+                            <i class="fas fa-exclamation"></i>
+                            <p>One of the upper values is not a positive number</p>
+                        </div>
+                    </div>
+                    <div id="fail" class="error">
+                        <div class="error-inner">
+                            <i class="fas fa-exclamation"></i>
+                            <p>The tip could not be calculated</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="output-fields">
+                <div class="tip-amnt">
+                    <p>Tip&nbsp;Amount<br>/&nbsp;person</p>
+                    <div class="tip-val">
+                        <i class="fas fa-dollar-sign fa-3x"></i>
+                        <p id="tip">0.00</p>
+                    </div>
+                </div>
+                <div class="total-amnt">
+                    <p>Total<br>/&nbsp;person</p>
+                    <div class="total-val">
+                        <i class="fas fa-dollar-sign fa-3x"></i>
+                        <p id="total">0.00</p>
+                    </div>
+                </div>
+
+                <div class="btn-box">
+                    <button class="reset-btn btn-2" onclick="reset();">Reset</button>
+                    <button class="submit-btn btn-2" onclick="submit();">Submit</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

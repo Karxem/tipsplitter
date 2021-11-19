@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Root Element */
+
+:root {
+    --button: #008a85;
+    --button-a: #00a19b;
+    --output: #00524f;
+    --number: #00bfa6;
+}
+
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    font-family: 'Patua One', cursive;
+}
+
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+
+/* Set core root defaults */
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+
+/* Set core body defaults */
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+    background-color: lightblue;
+}
+
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+/* Make images easier to work with */
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+
+/* Main */
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.content-box {
+    background-color: white;
+    height: 400px;
+    width: 800px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(50, 50, 93, 0.1) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.2) 0px -18px 36px -18px inset;
+}
+
+.input-fields {
+    height: 350px;
+    width: 400px;
+    border-radius: 20px;
+    margin-left: 2rem;
+}
+
+.output-fields {
+    background-color: var(--output);
+    color: white;
+    height: 350px;
+    width: 400px;
+    border-radius: 20px;
+    margin-right: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+main>p {
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+/* TIP */
+
+.tip-amnt {
+    display: flex;
+}
+
+.tip-amnt>p {
+    margin: 1rem;
+    color: gray;
+    min-width: 100px;
+    max-width: 120px;
+}
+
+.tip-amnt>p::first-line {
+    color: white;
+}
+
+.tip-val {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tip-val>p {
+    margin-left: .5rem;
+    font-size: 60px;
+    color: var(--number);
+}
+
+.tip-selec {
+    margin-top: -2rem;
+}
+
+.tip-container {
+    margin-top: -1rem;
+}
+
+
+/* TOTAL */
+
+.total-amnt {
+    display: flex;
+}
+
+.total-amnt>p {
+    margin: 1rem;
+    color: gray;
+    min-width: 100px;
+    max-width: 120px;
+}
+
+.total-amnt>p::first-line {
+    color: white;
+}
+
+.total-val {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-val>p {
+    margin-left: .5rem;
+    font-size: 60px;
+    color: var(--number);
+}
+
+/* PEOPLE */
+
+.ppl-amnt {
+    margin-top: -2rem;
+}
+
+/* ERROR */
+
+.error {
+    color: red;
+    display: none;
+}
+
+.error-inner {
+    display: flex;
+}
+
+.error-inner > .fas {
+    margin-right: .5rem;
+    margin-top: 5px;
+}
+
+/* ICONS */
+
+.tip-val>.fas {
+    margin-top: 22px;
+    color: var(--number);
+}
+
+.total-val>.fas {
+    margin-top: 22px;
+    color: var(--number);
+}
+
+.input-container>.fas {
+    color: var(--number);
+    margin-right: 1rem;
+}
+
+
+/* BUTTON */
+
+.btn-box {
+    margin-top: 4.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Without connection */
+.reset-btn {
+    margin-top: 3rem;
+}
+
+/* With connection */
+.submit-btn{
+    margin-top: .5rem;
+    display: none;
+}
+
+.space-btn {
+    margin-top: .5rem;
+}
+
+.btn {
+    cursor: pointer;
+    border: 0;
+    background: var(--button);
+    color: var(--output);
+    width: 45%;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.btn:hover,
+.btn-2:hover {
+    background: var(--button-a);
+    
+}
+
+.btn-2 {
+    cursor: pointer;
+    border: 0;
+    background: var(--button);
+    color: var(--output);
+    width: 95%;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 0.5em 1.5em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+
+
+/* INPUTS */
+
+.input-container {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 50%;
+    padding: 8px 0 5px 0;
+    font-size: 16px;
+    color: #00bfa6;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #008a85;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -12px;
+    font-size: 12px;
+}
