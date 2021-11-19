@@ -1,4 +1,8 @@
-# tipsplitter
+# Tipsplitter by Karxem
+
+## Usage
+
+This is a small and fun resource just for calculating bills and split them to a certain amount of people and also calculate a given tip.
 
 ## Contact
 
