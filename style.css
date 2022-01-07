@@ -121,7 +121,6 @@ select {
     border-radius: 20px;
     display: flex;
     align-items: center;
-    box-shadow: rgba(50, 50, 93, 0.1) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.2) 0px 18px 36px -18px inset, rgba(0, 0, 0, 0.2) 0px -18px 36px -18px inset;
 }
 
 .input-fields {
@@ -138,7 +137,6 @@ select {
     width: 400px;
     border-radius: 20px;
     margin-right: 2rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 main>p {
@@ -282,8 +280,7 @@ main>p {
     width: 45%;
     border-radius: 10px;
     font-weight: bold;
-    padding: 0.5em 1.5em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    padding: 0.5em 1.5em;   
 }
 
 .btn:hover,
@@ -301,7 +298,6 @@ main>p {
     border-radius: 10px;
     font-weight: bold;
     padding: 0.5em 1.5em;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
 
 
