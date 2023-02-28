@@ -2,11 +2,8 @@
 
 ## Usage
 
-This is a small and fun resource just for calculating bills and split them to a certain amount of people and also calculate a given tip.
+This is a small and fun resource just for calculating bills and split them to a certain amount of people and also calculate a tip.
 
-## Contact
-
-Your Name - [@Karxem]
 
 Project Link: [https://github.com/Karxem/tipsplitter]
 
